@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Presensi_Manual</string>
+    <string-array name="presensi_array">
+        <item>Hadir tepat waktu</item>
+        <item>Terlambat</item>
+        <item>Ijin</item>
+        <item>Sakit</item>
+    </string-array>
+</resources>
