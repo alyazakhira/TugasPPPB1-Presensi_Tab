@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupFrag">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="25dp">
+
+        <TextView
+            android:id="@+id/name_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Nama Lengkap"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/name_title"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/style"
+            android:hint="John Doe"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/email_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name_edit"
+            android:layout_marginBottom="10dp"
+            android:text="Email"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/email_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/email_title2"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/style"
+            android:hint="example@gmail.com"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/pass_title2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_edit2"
+            android:layout_marginBottom="10dp"
+            android:text="Katasandi"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/pass_edit2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/pass_title2"
+            android:background="@drawable/style"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <Button
+            android:id="@+id/btn_submit_signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Daftar" />
+
+    </RelativeLayout>
+
+</FrameLayout>

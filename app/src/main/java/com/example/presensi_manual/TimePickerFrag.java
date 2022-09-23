@@ -23,7 +23,7 @@ public class TimePickerFrag extends DialogFragment implements TimePickerDialog.O
 
     @Override
     public void onTimeSet(TimePicker timePicker, int i, int i1) {
-        MainActivity activity = (MainActivity) getActivity();
+        MainActivity2 activity = (MainActivity2) getActivity();
         activity.timeResult(i, i1);
     }
 }

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/parent_container"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+
+<TextView
+    android:id="@+id/title_app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="50dp"
+    android:fontFamily="sans-serif-medium"
+    android:text="Presensi Manual"
+    android:textAlignment="center"
+    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+    android:textSize="24sp" />
+
+<LinearLayout
+    android:id="@+id/layout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/title_app"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_tanggal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style"
+        android:hint="Masukkan Tanggal"
+        android:paddingLeft="10dp"
+        android:textAlignment="viewStart" />
+
+    <EditText
+        android:id="@+id/edit_waktu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style"
+        android:hint="Masukkan Waktu"
+        android:paddingLeft="10dp" />
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_spinnertext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/style"
+            android:paddingLeft="10dp"/>
+
+        <Spinner
+            android:id="@+id/edit_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_ket"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/style"
+        android:hint="Keterangan"
+        android:visibility="gone"
+        android:paddingLeft="10dp"/>
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/btn_submit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:text="Submit" />
+
+</RelativeLayout>
